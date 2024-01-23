@@ -1,7 +1,11 @@
-export default function Home() {
+import { unstable_noStore as noStore } from "next/cache";
+
+export default async function Dashboard() {
+  noStore();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      Landing Page
+      Dashboard
     </main>
   );
 }

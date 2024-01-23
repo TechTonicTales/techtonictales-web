@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { Tabs, Tab } from "@nextui-org/tabs";
 import { IconHome, IconUser, IconNews } from "@tabler/icons-react";
 
@@ -7,7 +8,7 @@ export default function NavDock() {
     <div className="fixed bottom-10 z-50 flex w-screen items-center justify-center">
       <Tabs
         classNames={{
-          base: "w-1/3 h-full",
+          base: "w-11/12 lg:w-1/3 h-full",
           tabList:
             "w-full h-16 bg-gray-300 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-700",
           tab: "w-full h-full",
